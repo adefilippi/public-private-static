@@ -38,6 +38,12 @@ namespace PublicPrivateStatic.Model
         public bool airConditioning = true;
 
         /*****************************************************
+        *  STEP 9 - Private
+           Une propriété private n'est accessible qu'a l'intérieur de la classe
+        *****************************************************/
+        private string registrationNumber = string.Empty;
+
+        /*****************************************************
         *  STEP 2  - Constructeurs
         *****************************************************/
         public Auto(string _brand, string _model, bool haveAirCond = true) :
@@ -67,5 +73,14 @@ namespace PublicPrivateStatic.Model
             return "Auto - function";
         }
 
+        public string GetRegistratioNumber()
+        {
+            return registrationNumber;
+        }
+
+        public void SetRegistratioNumber(string registratioon_number)
+        {
+            registrationNumber = registratioon_number;
+        }
     }
 }

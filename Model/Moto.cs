@@ -25,7 +25,8 @@ namespace PublicPrivateStatic.Model
         *****************************************************/
         // Même si vous ne remplissez pas les propriétés de votre classe enfant, 
         // Si vous définissez un constructeur dans votre classe parent, votre classe enfant doit aussi avoir un constructeur
-        public Moto(string _brand, string _model) : base(_brand, _model, 2)
+        public Moto(string _brand, string _model) : 
+            base(_brand, _model, 2)
         {
         }
 

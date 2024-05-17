@@ -95,9 +95,17 @@ namespace PublicPrivateStatic
             // Je ne peux pas changer la valeur de constTypeVehicle car c'est une constante, elle ne changera jamais;
             // La ligne suivante ne fonctionnera pas.
             //Auto.constTypeVehicle = 3;
-
             // Il n'existe pas d'équivalent de const pour les fonctions
 
+
+             /*****************************************************
+             *  STEP 8 - Private
+             *****************************************************/
+            // La ligne suivante ne fonctionnera pas, en effet la propriété registrationNumber étant private, il vous faut 
+            // passer par des méthode (Get et Set) pour y accéder
+            //alpine.registrationNumber = 3; 
+            alpine.SetRegistratioNumber("abcde");
+            Console.WriteLine(alpine.GetRegistratioNumber());
         }
     }
 }
